@@ -10,35 +10,46 @@
 <body>
     <h1>Race Registration!</h1>
     <form action="">
-        <label for="first">First name</label>
-        <input type="text" name="firstname" id="first">
-        <label for="last">Last name</label>
-        <input type="text" name="lastname" id="last">
+        <div>
+            <label for="first">First name</label>
+            <input type="text" name="firstname" id="first">
 
-        <p>Select a race:</p>
-        <input type="radio" name="run" id="run1">
-        <label for="run1">Fun Run 5k</label>
-        <div></div>
-        <input type="radio" name="run" id="run2">
-        <label for="run2">Half Marathon</label>
-        <div></div>
-        <input type="radio" name="run" id="run3">
-        <label for="run3">Full Marathon</label>
+            <label for="last">Last name</label>
+            <input type="text" name="lastname" id="last">
 
-        <div></div>
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email">
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password">
-        <div></div>
-        <label for="age_group">Select age group</label>
-        <select name="age_group" id="age_group">
-            <option value="under18">Under 18</option>
-            <option value="age2">18-30</option>
-            <option value="age3">30-50</option>
-            <option value="age4">50+</option>
-        </select>
-        <div></div>
+        </div>
+        <div>
+            <p>Select a race:</p>
+            <div>
+                <input type="radio" name="run" id="run1" value="run1">
+                <label for="run1">Fun Run 5k</label>
+            </div>
+            <div>
+                <input type="radio" name="run" id="run2" value="run2">
+                <label for="run2">Half Marathon</label>
+            </div>
+            <div>
+                <input type="radio" name="run" id="run3" value="run3">
+                <label for="run3">Full Marathon</label>
+            </div>
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <div>
+            <label for="age_group">Select age group</label>
+            <select name="age_group" id="age_group">
+                <option value="under18">Under 18</option>
+                <option value="age2">18-30</option>
+                <option value="age3">30-50</option>
+                <option value="age4">50+</option>
+            </select>
+        </div>
         <button type="submit">Register!</button>
 
     </form>
